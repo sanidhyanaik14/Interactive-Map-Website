@@ -1,0 +1,108 @@
+/* General body styles */
+html {
+    scroll-behavior: smooth;
+  }
+  
+.navbar{
+    
+    background-color: rgb(147, 239, 255);
+    color: rgba(0, 0, 0, 0);
+    text-align: left;
+    padding-left: 10px;
+    border: 2px solid black;
+}
+.card-body{
+    background-color: rgb(147, 239, 255);
+    
+}
+.destination{
+    text-align: right;
+    float:right;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 5%;
+    border:1px solid #000;
+    padding-right: 10px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  
+  /* Header styles */
+  h1 {
+    margin: 10px 0;
+    font-size: 1.5rem;
+    color: #333;
+  }
+  
+  /* Map container styles */
+  #map {
+   
+    height: 80vh;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    border: 2px solid #000;
+    border-radius: 8px;
+    margin-top: 10px;
+  }
+  
+  /* Responsive styles for smaller screens */
+  @media screen and (max-width: 768px) {
+    h1 {
+      font-size: 1.2rem;
+      margin: 5px 0;
+    }
+  
+    #map {
+      height: 80vh;
+      width: 95%;
+    }
+  }
+
+  .city-container {
+    display: flex;
+    flex-wrap: nowrap; /* Prevents wrapping */
+    overflow-x: auto; /* Enables horizontal scrolling */
+    gap: 20px; /* Adds space between the boxes */
+    padding: 20px;
+    scroll-snap-type: x mandatory; /* Adds smooth snapping behavior */
+  }
+  
+  .city-box {
+    position: relative;
+    min-width: 300px; /* Minimum width of each box */
+    height: 200px; /* Height of each box */
+    background-size: cover; /* Ensures the background image covers the box */
+    background-position: center; /* Centers the background image */
+    border-radius: 10px; /* Adds rounded corners to the box */
+    overflow: hidden; /* Ensures no overflowed content */
+    scroll-snap-align: start; /* Aligns the box to the start of the container */
+  }
+  
+  .city-name {
+    position: absolute;
+    bottom: 20px; /* Positions the text at the bottom */
+    left: 20px; /* Adds space from the left */
+    font-size: 24px; /* Font size */
+    font-weight: bold; /* Makes the text bold */
+    color: white; /* White text color */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adds a shadow for better visibility */
+  }
+  
+  
+  @media (max-width: 768px) {
+    .city-box {
+      min-width: 200px; /* Decrease box width for smaller screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .city-box {
+      min-width: 150px; /* Further decrease box width for very small screens */
+    }
+  }
+  

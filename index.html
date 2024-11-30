@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Interactive Map</title>
+  <!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRQQz2j3o9/7VZ+AKCq6RB7iw3o64FFUM03kp0Z0L" crossorigin="anonymous">
+<!-- Bootstrap Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoN3V6yMWRy4IWwxDI7tUyM8jg5oB3c5zgj/I9zjMAhAqWo" crossorigin="anonymous"></script>
+
+  <!-- Leaflet CSS -->
+ 
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <!-- Leaflet Geocoder CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>  
+ <div class="navbar">
+    <h1><b> World Map 
+    <i class="bi bi-map">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgba" class="bi bi-map" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M15.817.113A.5.5 0 0 1 16 .5v14a.5.5 0 0 1-.402.49l-5 1a.5.5 0 0 1-.196 0L5.5 15.01l-4.902.98A.5.5 0 0 1 0 15.5v-14a.5.5 0 0 1 .402-.49l5-1a.5.5 0 0 1 .196 0L10.5.99l4.902-.98a.5.5 0 0 1 .415.103M10 1.91l-4-.8v12.98l4 .8zm1 12.98 4-.8V1.11l-4 .8zm-6-.8V1.11l-4 .8v12.98z"/>
+          </svg>
+    </i> 
+
+    <b class="destination">
+        <i class="bi bi-geo-alt"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="black" class="bi bi-geo-alt" viewBox="0 0 16 16">
+            <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10"/>
+            <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+          </svg></i>
+          <a href=#location-guide>Famous cities</a>
+    </b>
+     
+</b></h1>
+    
+ </div>
+  
+  <div id="map"></div>
+
+  <div class="city" id="location-guide">
+    <div class="city-container">
+        <div class="city-box" style="background-image: url('./newYork.png');">
+          <span class="city-name">New York</span>
+        </div>
+        <div class="city-box" style="background-image: url('./london.png');">
+          <span class="city-name">London</span>
+        </div>
+        <div class="city-box" style="background-image: url('./paris.png');">
+          <span class="city-name">Paris</span>
+        </div>
+        <div class="city-box" style="background-image: url('./Tokyo.png');">
+          <span class="city-name">Tokyo</span>
+        </div>
+        <div class="city-box" style="background-image: url('./rome.png');">
+          <span class="city-name">Rome</span>
+        </div>
+        <div class="city-box" style="background-image: url('./Berlin.png');">
+          <span class="city-name">Berlin</span>
+        </div>
+        <div class="city-box" style="background-image: url('./mumbai.png');">
+          <span class="city-name">Mumbai</span>
+        </div>
+      </div>
+      
+
+  </div>
+
+
+  <div class="card text-center">
+    <div class="card-body">
+      <h5 class="card-title">Made with 💖</h5>
+      <p class="card-text">To explore world with map.</p>
+    </div>
+
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <!-- Leaflet Geocoder JS -->
+  <script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>
+  <script src="script.js"></script>
+ 
+  </div>
+</body>
+</html>
